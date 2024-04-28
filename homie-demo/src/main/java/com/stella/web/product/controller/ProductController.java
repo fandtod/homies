@@ -36,7 +36,6 @@ public class ProductController {
 	@CrossOrigin(origins = "http://localhost:8080")
 	public Result itemList(@PathVariable Integer id) {
 		List<Product> itemList =productService.itemList(id);
-		List<Product> item =productService.itemList(id);
 		return Result.success(itemList);
 	};
 }
