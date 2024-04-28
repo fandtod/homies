@@ -21,6 +21,7 @@ public class AdvertiseController {
 		@CrossOrigin(origins = "http://localhost:8080")
 		public Result getAdvertise() {
 			List<Advertise>  advertiseList  =advertiseService.getAdvertise();
+			List<Advertise>  advertise  =advertiseService.getAdvertise();
 			return Result.success(advertiseList);
 		}
 	}
