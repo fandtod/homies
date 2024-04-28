@@ -37,6 +37,7 @@ public class ProductController {
 	public Result itemList(@PathVariable Integer id) {
 		List<Product> itemList =productService.itemList(id);
 		List<Product> item =productService.itemList(id);
+		List<Product> itemById =productService.itemList(id);
 		return Result.success(itemList);
 	};
 }
