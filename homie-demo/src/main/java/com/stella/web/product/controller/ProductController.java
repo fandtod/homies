@@ -38,6 +38,7 @@ public class ProductController {
 		List<Product> itemList =productService.itemList(id);
 		List<Product> items =productService.itemList(id);
 		List<Product> item =productService.itemList(id);
+		List<Product> itemId =productService.itemList(id);
 		return Result.success(itemList);
 	};
 }
