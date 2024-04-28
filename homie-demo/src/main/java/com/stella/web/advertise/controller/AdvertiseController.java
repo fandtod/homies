@@ -22,6 +22,7 @@ public class AdvertiseController {
 		public Result getAdvertise() {
 			List<Advertise>  advertiseList  =advertiseService.getAdvertise();
 			List<Advertise>  advertise  =advertiseService.getAdvertise();
+			List<Advertise>  advertises  =advertiseService.getAdvertise();
 			return Result.success(advertiseList);
 		}
 	}
